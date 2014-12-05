@@ -1,7 +1,6 @@
 == README
 
-Working on going through a ruby on rails tutorial.
+Implementation of a blog website using ruby on rails directed by a tutorial.
 
 Tutorial: http://guides.rubyonrails.org/getting_started.html
 
-Currently at section 5.10
