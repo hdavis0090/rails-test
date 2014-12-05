@@ -1,3 +1,7 @@
 == README
 
-So far just got the server up and changed the index page
+Working on going through a ruby on rails tutorial.
+
+Tutorial: http://guides.rubyonrails.org/getting_started.html
+
+Currently at section 5.10
