@@ -5,8 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record in dev/test
 gem 'sqlite3', group: [:development, :test]
-# Use Postgres as the database for Active Record in production
-gem 'pg', group: [:production]
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,6 +22,14 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+group :production do
+  # Use Postgres as the database for Active Record in production.
+  gem 'pg'
+
+  # Enable static asset serving on Heroku.
+  gem 'rails_12factor'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
