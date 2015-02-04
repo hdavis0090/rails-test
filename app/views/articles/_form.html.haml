@@ -8,8 +8,8 @@
         %ul
           - @article.errors.full_messages.each do |msg|
             %li= msg 
-    =f.input :title 
+    =f.input :title, :wrapper => :vertical_form 
     %br 
-    =f.input :text 
+    =f.input :text
     %br 
     =f.button :submit
