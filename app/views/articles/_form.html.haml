@@ -1,5 +1,5 @@
 .box
-  =simple_form_for @article do |f|
+  =simple_form_for @article, wrapper: :horizontal_form do |f|
     -if @article.errors.any?
       #error_explanation
         %h2 
@@ -8,7 +8,7 @@
         %ul
           - @article.errors.full_messages.each do |msg|
             %li= msg 
-    =f.input :title, :wrapper => :vertical_form 
+    =f.input :title
     %br 
     =f.input :text
     %br 
